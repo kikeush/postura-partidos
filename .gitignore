@@ -1,0 +1,24 @@
+# Cachés y entornos
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# Datos derivados del corpus y modelos entrenados: se reconstruyen con los scripts
+# (menciones.parquet con 01, fase3_embeddings_qwen.npy con 06 embeddings, los joblib con 04,
+# predicciones_corpus.parquet con 05). El ZIP de la entrega incluye todos menos el .npy (15 MB).
+datos/menciones.parquet
+datos/fase3_embeddings_qwen.npy
+modelos/*.joblib
+resultados/predicciones_corpus.parquet
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+# Solo se publica el código: datos, anotaciones, resultados y documentos quedan en local.
+datos/*
+!datos/.gitkeep
+resultados/*
+!resultados/.gitkeep
+docs/

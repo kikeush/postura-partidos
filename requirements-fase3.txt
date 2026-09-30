@@ -1,0 +1,8 @@
+# Fase 3 (modelos de lenguaje y BERT). Autor: Enrique Alberto Mendoza Ruiz. Licencia: MIT.
+# mlx-lm solo funciona en Mac con Apple Silicon.
+mlx-lm>=0.31
+torch>=2.13
+transformers>=5.16
+pydantic>=2.10
+# Solo para regenerar la presentación (docs/presentacion/construir_presentacion.py).
+python-pptx>=1.0

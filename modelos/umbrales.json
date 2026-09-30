@@ -1,0 +1,41 @@
+{
+ "fecha": "2026-09-28",
+ "sklearn": "1.6.1",
+ "etiquetas_sinteticas": false,
+ "regla": "no_partido si p_partido < T1; si no, desfavorable o favorable según sus umbrales (gana el mayor margen relativo) y neutral si ninguno los supera.",
+ "T1": {
+  "umbral": 0.5922517940546115,
+  "modelo": "svm_lineal",
+  "parametros": {
+   "clf__C": 1.0
+  },
+  "auc_validacion": 0.9684734513274337,
+  "auc_prueba": 0.9709864603481625,
+  "clase_positiva": "es_partido"
+ },
+ "T2a": {
+  "umbral": 0.5788914915667221,
+  "modelo": "bosque_aleatorio",
+  "parametros": {
+   "clf__max_features": "sqrt",
+   "clf__min_samples_leaf": 3
+  },
+  "auc_validacion": 0.9248190719455087,
+  "auc_prueba": 0.9204352959293671,
+  "clase_positiva": "desfavorable"
+ },
+ "T2b": {
+  "umbral": 0.6938206855359459,
+  "modelo": "logistica",
+  "parametros": {
+   "clf__C": 0.1,
+   "rasgos__palabras__ngram_range": [
+    1,
+    2
+   ]
+  },
+  "auc_validacion": 0.8995462046204621,
+  "auc_prueba": 0.9280864197530864,
+  "clase_positiva": "favorable"
+ }
+}

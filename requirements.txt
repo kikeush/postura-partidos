@@ -1,0 +1,15 @@
+# Fase 2 y demostración. Autor: Enrique Alberto Mendoza Ruiz. Licencia: MIT.
+# streamlit y plotly van fijos en las versiones probadas: con versiones más nuevas Streamlit
+# llena la terminal de avisos por use_container_width. threadpoolctl se importa directamente
+# en postura/rasgos.py.
+scikit-learn==1.6.1
+numpy>=2.1
+pandas>=2.2
+scipy>=1.15
+joblib>=1.4
+pyarrow>=19
+matplotlib>=3.10
+streamlit==1.45.1
+plotly==5.24.1
+pytest>=8.3
+threadpoolctl>=3.5
